@@ -1,0 +1,91 @@
+Semana 1 de Moodle
+
+Antes que nada, hdejar tu sistema moodle en modo debugger
+
+Configurar entorno de desarrollo
+Recuperar conceotos que se necesiten de la programación (apoyarte en la simplicidad de python)
+Aprender cómo obtener ayuda de los foros, y cómo trabajar en Moodle Tracker
+Aprenderte la estructura de un Moodle
+Instalar Moodle usando git, y ver cómo mantener una copia de Moodle considerando customizaciones
+Distinguir los tipos de desarrollo de Moodle, los que no tocan el core y los que sí
+Aprende a posterar en Moodle y pedir ayuda
+Conseguir una licencia de redhat paara meterle mano al moodle
+Aprender developer tools
+Leer la sección de debugging de moodle
+Leer seccion de git developer y moodle
+
+
+Para debuggear:
+apache logs
+errores de php
+errores de mysql
+Modo debugging de Moodle
+Consola de desarrollo del navegador
+Debugging del cron: function trace() de moodle
+
+
+
+
+
+Recuerda que muchas cosas se pueden forzar desde el archivo del config.php
+
+También se puede hacer debugging del cron: es un poco diferente
+En caso de que necesites hacer debugging del cron necesitarás usar la funcion trace de moodle y los mensajes de salida.
+
+Para debuggear la salida del navegador, developer tolls es suficuiente, puedes correr html, javascript y css
+
+Casi siempre se empieza por esta herramienta.
+
+
+
+Buscar chambas en Moodle Jobs
+
+Para desabilitar caching:
+
+imagenes y css
+javascript
+cadenas de idioma
+
+desabilitar memcached y aceleradores de php como opcaché, se deben desabilitar siempre para desarrollar
+
+
+Hay que mantener una copia de Moodle limpia y con información de prueba con la que puedas aislar algun elemento particular y hacer una prueba muy específica, y volver a las pruebas princilales sin tener que levantar un ambiente desde cero. Sería como un aula template para desarrollo.
+
+Lo puedes complementar con una máquina virtual que sea facilmente deployable. E inclusive utilizando contenedores.
+
+
+
+
+
+
+phpstorm con x debug con x debug helper
+
+qué es amd module de moodle
+
+
+
+
+
+Hay dos formas de meterle mano a Moodle
+Haciendo hacking  Tocando el core de Moodle
+O haciendo retoque (tweaking) - No tocando el core de Moodle
+
+En general, si necesitas meterle mano a Moodle considera el nivel de mano que le vas a meter, si es algún ajuste o retoque, se puede hacer siempre y cuando no sea una modificación profunda. Ya habrá oprtunidad de incluirlo dentro del core de Moodle. Para código completamente personalizado es mejor hacer un nuevo plugin.
+
+Que puedes hacer en primera instancia para meterle mano a Moodle sin cambiar el core:
+Personalizar el css
+Introducir html adicional
+pagina login custom
+página principal o front page custom
+sobre escribir renderers
+scripts custom
+
+Debes explorar todos los anteriores, y retoma el libro de javascript cookbook
+
+
+
+
+
+
+
+
